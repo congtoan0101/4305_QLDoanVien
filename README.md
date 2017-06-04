@@ -8,7 +8,7 @@
 	<!--  -->
 	<h1>Giấy phép</h1>
 	<p>
-		Thông tin về giấy phép.
+		<a href="https://github.com/DHCN1A-Group3/4305_QLDoanVien/blob/master/LICENSE">MIT License</a> Copyright &copy; 2017 G3 Team - Telecommunications University
 	</p>
 	<!--  -->
 	<h1>Tổ chức mã nguồn</h1>
