@@ -256,10 +256,10 @@
 	"buffers":
 	[
 		{
-			"file": "README.md",
+			"file": "/D/xampp/htdocs/qldv_temp/system/core/Application.php",
 			"settings":
 			{
-				"buffer_size": 71,
+				"buffer_size": 800,
 				"line_ending": "Windows"
 			}
 		}
@@ -304,6 +304,11 @@
 	],
 	"file_history":
 	[
+		"/D/xampp/htdocs/qldv_temp/system/core/QD_Controller.php",
+		"/D/xampp/htdocs/qldv_temp/system/core/QD_Model.php",
+		"/D/xampp/htdocs/qldv_temp/index.php",
+		"/D/xampp/htdocs/qldv_temp/admin/index.php",
+		"/D/xampp/htdocs/qldv_temp/admin/config/constant.php",
 		"/D/xampp/htdocs/4305/README.md",
 		"/D/xampp/htdocs/4305/docs/index.html",
 		"/D/xampp/htdocs/qldoanvien/system/core/QD_Model.php",
@@ -470,24 +475,23 @@
 			[
 				{
 					"buffer": 0,
-					"file": "README.md",
+					"file": "/D/xampp/htdocs/qldv_temp/system/core/Application.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 71,
+						"buffer_size": 800,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								36,
-								36
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
@@ -506,26 +510,6 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -536,36 +520,57 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content"
 							],
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 324.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

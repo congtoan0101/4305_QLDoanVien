@@ -1,0 +1,15 @@
+#ajaxLoadingBar{
+	display: none;
+	text-align: center;
+	background: url('../img/ajax-loader.gif') no-repeat center center;
+	height: 15px;
+	width: 100%;
+}
+
+body{
+	background: #222d32;
+}
+
+h3.box-title{
+	text-transform: uppercase;
+}
