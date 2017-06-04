@@ -292,17 +292,19 @@
 	},
 	"expanded_folders":
 	[
-		"/D/xampp/htdocs/4305"
+		"/D/xampp/htdocs/4305",
+		"/D/xampp/htdocs/4305/public",
+		"/D/xampp/htdocs/4305/public/plugins"
 	],
 	"file_history":
 	[
+		"/D/xampp/htdocs/4305/README.md",
 		"/D/xampp/htdocs/qldv_temp/system/core/Application.php",
 		"/D/xampp/htdocs/qldv_temp/system/core/QD_Controller.php",
 		"/D/xampp/htdocs/qldv_temp/system/core/QD_Model.php",
 		"/D/xampp/htdocs/qldv_temp/index.php",
 		"/D/xampp/htdocs/qldv_temp/admin/index.php",
 		"/D/xampp/htdocs/qldv_temp/admin/config/constant.php",
-		"/D/xampp/htdocs/4305/README.md",
 		"/D/xampp/htdocs/4305/docs/index.html",
 		"/D/xampp/htdocs/qldoanvien/system/core/QD_Model.php",
 		"/D/xampp/htdocs/qldoanvien/admin/model/Admin_Model.php",
