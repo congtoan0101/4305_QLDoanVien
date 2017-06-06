@@ -1,6 +1,6 @@
 <html>
 <body>
-	<p><center><img src="http://imgur.com/zseb0Zz"></center></p>
+	<p><center><img src="http://i.imgur.com/zseb0Zz.png"></center></p>
 	<!--  -->
 	<h1>Mở đầu</h1>
 	<p>
