@@ -14,33 +14,32 @@
 	<!--  -->
 	<h1>Tổ chức mã nguồn</h1>
 	<p>
-		Được xây dựng theo mô hình MVC là một mô hình chuẩn được sử dụng rộng rãi hiện nay, mã nguồn của website được tổ chức rõ ràng theo từng thư mục với từng nhiệm vụ và chức năng khác nhau.
-		<pre>
-			|- <strong>admin</strong>
-			|--- config
-			|--- controller
-			|--- model
-			|--- view
-			|- <strong>application</strong>
-			|--- config
-			|--- controller
-			|--- model
-			|--- view
-			|- <strong>public</strong>
-			|--- css
-			|--- fonts
-			|--- images
-			|--- js
-			|--- plugins
-			|- <strong>system</strong>
-			|--- config
-			|--- core
-			|--- helper
-			|--- library
-			|- <strong>upload</strong>
-			|- .htaccess
-			|- index.php
-		</pre>
+		Được xây dựng theo mô hình MVC là một mô hình chuẩn được sử dụng rộng rãi hiện nay, mã nguồn của website được tổ chức rõ ràng theo từng thư mục với từng nhiệm vụ và chức năng khác nhau. <a href="https://freetuts.net/mvc-php-mo-hinh-mvc-la-gi-354.html">Tìm hiểu mô hình MVC trong PHP?</a>
+<pre>
+	|- <strong>admin</strong> <small>(Chứa các chức năng quản lý của các bộ Đoàn)</small>
+	|--- <em>config</em> <small>(Chứa các thông tin cấu hình)</small>
+	|--- <em>controller</em> <small>(Chứa các Controller)</small>
+	|--- <em>model</em> <small>(Chứa các Model)</small>
+	|--- <em>view</em> <small>(Chứa các View)</small>
+	|- <strong>application</strong> <small>(Chứa các chức năng cho Đoàn viên)</small>
+	|--- <em>config</em> <small>(Chứa các thông tin cấu hình)</small>
+	|--- <em>controller</em> <small>(Chứa các Controller)</small>
+	|--- <em>model</em> <small>(Chứa các Model)</small>
+	|--- <em>view</em> <small>(Chứa các View)</small>
+	|- <strong>public</strong> <small>(Chứa các file public)</small>
+	|--- <em>css</em> <small>(Chứa các CSS)</small>
+	|--- <em>fonts</em> <small>(Chứa các Fonts)</small>
+	|--- <em>images</em> <small>(Chứa các Hình ảnh)</small>
+	|--- <em>js</em> <small>(Chứa các JavaScript)</small>
+	|--- <em>plugins</em> <small>(Chứa các Plugin)</small>
+	|- <strong>system</strong> <small>(Chứa các file hệ thống)</small>
+	|--- <em>config</em> <small>(Chứa các thông tin cấu hình)</small>
+	|--- <em>core</em> <small>(Core chính hệ thống)</small>
+	|--- <em>helper</em> <small>(Chứa các Helper)</small>
+	|--- <em>library</em> <small>(Chứa các Thư viện)</small>
+	|- <strong>upload</strong> <small>(Chứa các file được upload)</small>
+	|- <em>index.php</em>
+</pre>
 	</p>
 	<!--  -->
 	<h1>Ngôn ngữ lập trình</h1>
