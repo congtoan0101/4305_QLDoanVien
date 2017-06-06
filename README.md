@@ -46,11 +46,11 @@
 	<p>
 		<blockquote>
 			<p>Website đựng xây dựng bằng ngôn ngữ lập trình <strong>PHP</strong> sử dụng hệ quản trị CSDL <strong>MySQL</strong>.</p>
-			<p>
-				<img src="http://php.net/images/logos/php-logo.svg">
-				<img src="https://camo.githubusercontent.com/0153fcda437fd179e7bd720481bdb25b6cabca06/687474703a2f2f7777772e6d7973716c2e636f6d2f636f6d6d6f6e2f6c6f676f732f706f77657265642d62792d6d7973716c2d3132357836342e706e67">
-			</p>
 		</blockquote>
+		<p>
+			<img src="http://php.net/images/logos/php-logo.svg" width="50%">
+			<img src="https://labs.mysql.com/common/logos/mysql-logo.svg?v2" width="50%">
+		</p>
 	</p>
 	<!--  -->
 	<h1>Tài liệu hướng dẫn sử dụng</h1>
