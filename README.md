@@ -1,5 +1,6 @@
 <html>
 <body>
+	<p><center><img src="http://imgur.com/zseb0Zz"></center></p>
 	<!--  -->
 	<h1>Mở đầu</h1>
 	<p>
@@ -48,8 +49,8 @@
 			<p>Website đựng xây dựng bằng ngôn ngữ lập trình <strong>PHP</strong> sử dụng hệ quản trị CSDL <strong>MySQL</strong>.</p>
 		</blockquote>
 		<p>
-			<img src="http://php.net/images/logos/php-logo.svg" width="50%">
-			<img src="https://labs.mysql.com/common/logos/mysql-logo.svg?v2" width="50%">
+			<img src="http://php.net/images/logos/php-logo.svg" width="10%">
+			<img src="https://labs.mysql.com/common/logos/mysql-logo.svg?v2" width="10%">
 		</p>
 	</p>
 	<!--  -->
