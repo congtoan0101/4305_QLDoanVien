@@ -16,29 +16,29 @@
 	<p>
 		Được xây dựng theo mô hình MVC là một mô hình chuẩn được sử dụng rộng rãi hiện nay, mã nguồn của website được tổ chức rõ ràng theo từng thư mục với từng nhiệm vụ và chức năng khác nhau. <a href="https://freetuts.net/mvc-php-mo-hinh-mvc-la-gi-354.html">Tìm hiểu mô hình MVC trong PHP?</a>
 <pre>
-	|- <strong>admin</strong> <small>(Chứa các chức năng quản lý của các bộ Đoàn)</small>
-	|--- <em>config</em> <small>(Chứa các thông tin cấu hình)</small>
-	|--- <em>controller</em> <small>(Chứa các Controller)</small>
-	|--- <em>model</em> <small>(Chứa các Model)</small>
-	|--- <em>view</em> <small>(Chứa các View)</small>
-	|- <strong>application</strong> <small>(Chứa các chức năng cho Đoàn viên)</small>
-	|--- <em>config</em> <small>(Chứa các thông tin cấu hình)</small>
-	|--- <em>controller</em> <small>(Chứa các Controller)</small>
-	|--- <em>model</em> <small>(Chứa các Model)</small>
-	|--- <em>view</em> <small>(Chứa các View)</small>
-	|- <strong>public</strong> <small>(Chứa các file public)</small>
-	|--- <em>css</em> <small>(Chứa các CSS)</small>
-	|--- <em>fonts</em> <small>(Chứa các Fonts)</small>
-	|--- <em>images</em> <small>(Chứa các Hình ảnh)</small>
-	|--- <em>js</em> <small>(Chứa các JavaScript)</small>
-	|--- <em>plugins</em> <small>(Chứa các Plugin)</small>
-	|- <strong>system</strong> <small>(Chứa các file hệ thống)</small>
-	|--- <em>config</em> <small>(Chứa các thông tin cấu hình)</small>
-	|--- <em>core</em> <small>(Core chính hệ thống)</small>
-	|--- <em>helper</em> <small>(Chứa các Helper)</small>
-	|--- <em>library</em> <small>(Chứa các Thư viện)</small>
-	|- <strong>upload</strong> <small>(Chứa các file được upload)</small>
-	|- <em>index.php</em>
+	|- <strong>admin</strong> <em>(Chứa các chức năng quản lý của các bộ Đoàn)</em>
+	|--- <strong>config</strong> <em>(Chứa các thông tin cấu hình)</em>
+	|--- <strong>controller</strong> <em>(Chứa các Controller)</em>
+	|--- <strong>model</strong> <em>(Chứa các Model)</em>
+	|--- <strong>view</strong> <em>(Chứa các View)</em>
+	|- <strong>application</strong> <em>(Chứa các chức năng cho Đoàn viên)</em>
+	|--- <strong>config</strong> <em>(Chứa các thông tin cấu hình)</em>
+	|--- <strong>controller</strong> <em>(Chứa các Controller)</em>
+	|--- <strong>model</strong> <em>(Chứa các Model)</em>
+	|--- <strong>view</strong> <em>(Chứa các View)</em>
+	|- <strong>public</strong> <em>(Chứa các file public)</em>
+	|--- <strong>css</strong> <em>(Chứa các CSS)</em>
+	|--- <strong>fonts</strong> <em>(Chứa các Fonts)</em>
+	|--- <strong>images</strong> <em>(Chứa các Hình ảnh)</em>
+	|--- <strong>js</strong> <em>(Chứa các JavaScript)</em>
+	|--- <strong>plugins</strong> <em>(Chứa các Plugin)</em>
+	|- <strong>syststrong</strong> <em>(Chứa các file hệ thống)</em>
+	|--- <strong>config</strong> <em>(Chứa các thông tin cấu hình)</em>
+	|--- <strong>core</strong> <em>(Core chính hệ thống)</em>
+	|--- <strong>helper</strong> <em>(Chứa các Helper)</em>
+	|--- <strong>library</strong> <em>(Chứa các Thư viện)</em>
+	|- <strong>upload</strong> <em>(Chứa các file được upload)</em>
+	|- <strong>index.php</strong>
 </pre>
 	</p>
 	<!--  -->
