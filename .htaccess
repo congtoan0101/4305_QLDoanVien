@@ -1,7 +1,7 @@
 Options +FollowSymlinks -MultiViews
 
 RewriteEngine on
-RewriteBase /qldoanvien/
+RewriteBase /4305/
 
 RewriteCond %{REQUEST_FILENAME} -d [OR]
 RewriteCond %{REQUEST_FILENAME} -f [OR]

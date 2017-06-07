@@ -28,6 +28,15 @@ class QD_Controller
 	    $this->helper = new Helper_Loader();
 	    // Get Parameters from $_SERVER['QUERY_STRING']
 		$this->params = $this->getParameters();
+
+		session_start();
+		$params = $this->params;
+		$params['c'] = (isset($params['c']) ? $params['c'] : 'home');
+		$params['a'] = (isset($params['a']) ? $params['a'] : 'index');
+		
+		if ($params['c'] != "taikhoan" && $params['a'] != "dangnhap") {
+			$this->checkSession();
+		}
 	}
 
 	protected function getParameters() {
@@ -40,6 +49,13 @@ class QD_Controller
 				$_params[$value[0]] = $value[1];
 			}
 			return $_params;
+		}
+	}
+
+	protected function checkSession() {
+		if (!isset($_SESSION['EMAIL']) || empty($_SESSION['EMAIL'])) {
+			header('Location: ' . BASE_URL . '/taikhoan/dangnhap');
+			die;
 		}
 	}
 }

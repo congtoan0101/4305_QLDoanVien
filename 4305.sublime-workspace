@@ -292,12 +292,11 @@
 	},
 	"expanded_folders":
 	[
-		"/D/xampp/htdocs/4305",
-		"/D/xampp/htdocs/4305/public",
-		"/D/xampp/htdocs/4305/public/plugins"
+		"/D/xampp/htdocs/4305"
 	],
 	"file_history":
 	[
+		"/C/Program Files/NetBeans 8.2/etc/netbeans.conf",
 		"/D/xampp/htdocs/4305/README.md",
 		"/D/xampp/htdocs/qldv_temp/system/core/Application.php",
 		"/D/xampp/htdocs/qldv_temp/system/core/QD_Controller.php",
@@ -442,6 +441,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"small",
+			"em",
 			"errThemSV",
 			"clickThemSV",
 			"library",
@@ -529,7 +530,7 @@
 		[
 			[
 				"",
-				"D:\\xampp\\htdocs\\laptrinhphp\\laptrinhphp.sublime-project"
+				"D:\\xampp\\htdocs\\qldoanvien\\qldoanvien.sublime-project"
 			]
 		],
 		"width": 380.0

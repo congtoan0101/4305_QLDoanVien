@@ -30,7 +30,7 @@ function DangNhap() {
                         $('#errDangNhap').slideUp(200);
                     }, 3000);
                 } else {
-                    $('#frmDangNhap')[0].reset();
+                    $('#frmDangNhap').slideUp(200);
                     $('#errDangNhap').removeClass('text-danger');
                     $('#errDangNhap').addClass('text-success');
                     $('#errDangNhap').html(res.message);
