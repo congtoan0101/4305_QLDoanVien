@@ -9,7 +9,7 @@ class Taikhoan extends QD_Controller
 
 	function index() {
 		$data['metaTitle'] = 'Tài khoản';
-		$data['contentView'] = 'home';
+		$data['contentView'] = 'taikhoan/home';
 
 		$data['data'] = array(
 			'name' => 'Dat'
@@ -35,6 +35,15 @@ class Taikhoan extends QD_Controller
 		$this->view->load('taikhoan_layout', $data);
 	}
 
+	function dangxuat() {
+		session_unset();
+		//unset($_COOKIE['EMAIL']);
+		setcookie('EMAIL', NULL, -1, '');
+		header('Location: '. BASE_URL . '/taikhoan/dangnhap');
+		die;
+	}
+
+	// Xử lý ajax 
 	function xulydangnhap() {
 		$myModel = $this->model->taikhoan;
 

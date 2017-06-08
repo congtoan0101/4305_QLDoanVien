@@ -1,4 +1,7 @@
 <html>
+<head>
+	<meta charset="utf-8">
+</head>
 <body>
 	<p><center><img src="http://i.imgur.com/zseb0Zz.png"></center></p>
 	<!--  -->
@@ -33,7 +36,7 @@
 |--- <strong>images</strong> <em>(Chứa các Hình ảnh)</em>
 |--- <strong>js</strong> <em>(Chứa các JavaScript)</em>
 |--- <strong>plugins</strong> <em>(Chứa các Plugin)</em>
-|- <strong>syststrong</strong> <em>(Chứa các file hệ thống)</em>
+|- <strong>system</strong> <em>(Chứa các file hệ thống)</em>
 |--- <strong>config</strong> <em>(Chứa các thông tin cấu hình)</em>
 |--- <strong>core</strong> <em>(Core chính hệ thống)</em>
 |--- <strong>helper</strong> <em>(Chứa các Helper)</em>

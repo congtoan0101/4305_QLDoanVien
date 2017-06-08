@@ -16,19 +16,23 @@
 					<i class="fa fa-users"></i> <span>Đoàn viên</span>
 				</a>
 			</li>
+			<?php if(isset($_SESSION['QUYEN']) && $_SESSION['QUYEN'] == 2) { ?>
 			<li class="treeview <?php echo (($c == 'taikhoan') ? 'active' : ''); ?>">
-				<a href="<?php echo BASE_URL; ?>/doanvien">
+				<a href="<?php echo BASE_URL; ?>/taikhoan">
 					<i class="fa fa-user"></i> <span>Tài khoản</span>
-					<span class="pull-right-container">
-	              		<i class="fa fa-angle-left pull-right"></i>
-	            	</span>
-          		</a>
-				<ul class="treeview-menu mn-lv-1">
-					<?php if(isset($_SESSION['QUYEN']) && $_SESSION['QUYEN'] == 2) { ?>
-						<li class="mn-lv-2 <?php echo (($ca == 'taikhoan-them') ? 'active' : ''); ?>"><a href="<?php echo BASE_URL; ?>/taikhoan/them"><i class="fa fa-plus"></i> Thêm mới</a></li>
-					<?php } ?>
-					<li class="mn-lv-2 <?php echo (($ca == 'taikhoan-doimatkhau') ? 'active' : ''); ?>"><a href="<?php echo BASE_URL; ?>/taikhoan/doimatkhau"><i class="fa fa-lock"></i> Đổi mật khẩu</a></li>
-				</ul>
+				</a>
+			</li>
+			<?php } ?>
+			<li class="header"><?php echo $_SESSION['EMAIL']; ?></li>
+			<li class="treeview">
+				<a href="<?php echo BASE_URL; ?>/taikhoan/doimatkhau">
+					<i class="fa fa-lock"></i> <span>Đổi mật khẩu</span>
+				</a>
+			</li>
+			<li class="treeview">
+				<a href="<?php echo BASE_URL; ?>/taikhoan/dangxuat">
+					<i class="fa fa-sign-out text-danger"></i> <span class="text-danger">Đăng xuất</span>
+				</a>
 			</li>
 		</ul>
 	</section>
