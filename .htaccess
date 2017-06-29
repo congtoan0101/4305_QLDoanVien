@@ -1,15 +1,4 @@
-Options +FollowSymlinks -MultiViews
-
-RewriteEngine on
-RewriteBase /4305/
-
-RewriteCond %{REQUEST_FILENAME} -d [OR]
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -l
-RewriteRule ^ - [L]
-
-RewriteRule ^admin/([a-zA-Z0-9]+)/?$ admin/index.php?c=$1 [L,QSA]
-RewriteRule ^admin/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/?$ admin/index.php?c=$1&a=$2 [L,QSA]
-
-RewriteRule ^([a-zA-Z0-9]+)/?$ index.php?c=$1 [L,QSA]
-RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/?$ index.php?c=$1&a=$2 [L,QSA]
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]

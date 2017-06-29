@@ -1,0 +1,68 @@
+#ajaxLoadingBar{
+	display: none;
+	text-align: center;
+	background: url('../img/ajax-loader.gif') no-repeat center center;
+	height: 15px;
+	width: 100%;
+}
+
+.main-header .logo img{
+	height: 35px;
+}
+
+.box-header .box-title{
+	text-transform: uppercase;
+    font-weight: 700;
+}
+
+.info-box {
+	border-radius: 0px;
+    height: 222px;
+}
+
+.info-box-icon {
+    width: 95px;
+    font-size: 30px;
+}
+
+.info-box-content {
+    margin-left: 95px;
+    height: 90px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.info-box-action {
+    float: left;
+    padding: 5px 10px;
+    width: 100%;
+    font-weight: 700;
+}
+.info-box-action .btn{
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+
+.btn {
+	border-color: #fff; 
+	text-transform: uppercase;
+}
+
+th, .modal-title {
+	text-transform: uppercase;
+}
+
+.badge {
+	border: 1px solid #fff;
+}
+
+.radio-group label {
+	cursor: pointer;
+}
+
+/* Fix AdminLTE */
+.sidebar-menu li.active > a > .pull-right-container > .fa-angle-left{
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
