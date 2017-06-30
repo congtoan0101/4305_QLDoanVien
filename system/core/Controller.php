@@ -80,8 +80,8 @@ class CI_Controller {
 		log_message('info', 'Controller Class Initialized');
 
 		// if (!in_array($this->router->fetch_method(), array('dangnhap','xulyDangNhap'), true)) { 
-		// 	if (!$this->session->has_userdata('TenDangNhap')) {
-		// 		@header("Location: " . base_url('nhanvien/dangnhap'));
+		// 	if (!$this->session->has_userdata('TENDANGNHAP')) {
+		// 		@header("Location: " . base_url('taikhoan/dangnhap'));
 		// 		die;
 		// 	}
 		// }

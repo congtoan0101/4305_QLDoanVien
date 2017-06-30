@@ -27,7 +27,7 @@
 				</a>
 			</li>
 			
-			<li class="treeview <?php echo ((isset($sb_page))&&($sb_page=='taikhoan'))?'active':''; ?>">
+			<!-- <li class="treeview <?php echo ((isset($sb_page))&&($sb_page=='taikhoan'))?'active':''; ?>">
 				<a href="<?php echo base_url('taikhoan'); ?>">
 					<i class="fa fa-database"></i> <span>Tài khoản</span>
 				</a>
@@ -45,7 +45,7 @@
 				<a href="<?php echo base_url('taikhoan/thoat'); ?>">
 					<i class="fa fa-sign-out text-danger"></i> <span class="text-danger">Thoát</span>
 				</a>
-			</li>
+			</li> -->
 		</ul>
 	</section>
 </aside>
