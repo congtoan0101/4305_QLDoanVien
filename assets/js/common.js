@@ -168,7 +168,6 @@ App.DoanCS = function(){
 	                        $('#errThemDCS').slideUp(200);
 	                    }, 3000);
 	                } else {
-	                    $('#frmDangNhap').slideUp(200);
 	                    $('#errThemDCS').removeClass('text-danger').addClass('text-success').html(res.message).slideDown(200);
 	                    
 	                    setTimeout(function(){
@@ -181,5 +180,46 @@ App.DoanCS = function(){
 	}
 	return {
 		ThemDCS:ThemDCS
+	};
+}();
+
+// Chi đoàn
+App.ChiDoan = function(){
+
+	var dangXuLy = false;
+
+	var ThemCD = function() {
+	    if (dangXuLy == false) {
+	        App.Site.showAjaxLoading();
+	        dangXuLy = true;
+	        var frmData = $('#frmThemCD').serialize();
+
+	        $.ajax({
+	            url : baseurl + '/chidoan/xulyThemCD',
+	            type : 'POST',
+	            data : frmData,
+	            dataType: 'json',
+	            success : function(res){
+	                App.Site.hideAjaxLoading();
+	                dangXuLy = false;
+	                if (res.status == false) {
+	                    $('#errThemCD').removeClass('text-success').addClass('text-danger').html(res.message).slideDown(200);
+	                    
+	                    setTimeout(function(){
+	                        $('#errThemCD').slideUp(200);
+	                    }, 3000);
+	                } else {
+	                    $('#errThemCD').removeClass('text-danger').addClass('text-success').html(res.message).slideDown(200);
+	                    
+	                    setTimeout(function(){
+	                        location.reload();
+	                    }, 700);
+	                }
+	            }
+	        });
+	    }
+	}
+	return {
+		ThemCD:ThemCD
 	};
 }();

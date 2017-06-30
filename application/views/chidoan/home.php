@@ -23,7 +23,7 @@
 								<th class="text-center">Đoàn cơ sở</th>
 								<th class="text-center">Chức năng</th>
 							</tr>
-
+						<?php if (isset($listCD) && !empty($listCD)): ?>
 						<?php foreach ($listCD as $i => $item) { ?>
 							<tr>
 								<td class="text-center"><?php echo $i + 1; ?></td>
@@ -36,6 +36,7 @@
 								</td>
 							</tr>
 						<?php } ?>
+						<?php endif ?>
 						</table>
 					</div>
 				</div>
@@ -83,7 +84,7 @@
 				</div>
 				<div class="row" style="margin: 0px;">
 					<button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Hủy</button>
-					<button type="button" class="btn btn-success btn-flat" onclick="ThemCD();return false;">Thêm</button>
+					<button type="button" class="btn btn-success btn-flat" onclick="App.ChiDoan.ThemCD();return false;">Thêm</button>
 				</div>
 			</div>
 		</div>
