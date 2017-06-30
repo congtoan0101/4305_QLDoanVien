@@ -280,30 +280,12 @@
 	"buffers":
 	[
 		{
-			"file": "application/controllers/Home.php",
+			"file": "/D/xampp/htdocs/4305cu/.htaccess",
 			"settings":
 			{
-				"buffer_size": 349,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/mainLayout.php",
-			"settings":
-			{
-				"buffer_size": 1008,
+				"buffer_size": 492,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/partials/sidebar.php",
-			"settings":
-			{
-				"buffer_size": 1824,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -344,22 +326,21 @@
 	"expanded_folders":
 	[
 		"/D/xampp/htdocs/4305",
-		"/D/xampp/htdocs/4305/application",
-		"/D/xampp/htdocs/4305/application/controllers",
-		"/D/xampp/htdocs/4305/application/views",
-		"/D/xampp/htdocs/4305/application/views/home",
-		"/D/xampp/htdocs/4305/application/views/partials",
-		"/D/xampp/htdocs/4305/assets",
-		"/D/xampp/htdocs/4305/assets/img"
+		"/D/xampp/htdocs/4305/application"
 	],
 	"file_history":
 	[
+		"/D/xampp/htdocs/4305cu/system/config/config.php",
+		"/D/xampp/htdocs/4305/README.md",
+		"/D/xampp/htdocs/4305cu/system/config/database.php",
+		"/D/xampp/htdocs/4305/assets/js/common.js",
 		"/D/xampp/htdocs/4305/application/views/home/home.php",
-		"/D/xampp/htdocs/4305/application/views/partials/sidebar.php",
-		"/D/xampp/htdocs/4305/application/views/partials/header.php",
-		"/D/xampp/htdocs/4305/application/views/partials/styles.php",
 		"/D/xampp/htdocs/4305/application/views/maucontent.php",
 		"/D/xampp/htdocs/4305/application/controllers/Home.php",
+		"/D/xampp/htdocs/4305/application/views/partials/sidebar.php",
+		"/D/xampp/htdocs/4305/application/views/mainLayout.php",
+		"/D/xampp/htdocs/4305/application/views/partials/header.php",
+		"/D/xampp/htdocs/4305/application/views/partials/styles.php",
 		"/D/xampp/htdocs/4305/application/helpers/qldv_helper.php",
 		"/D/xampp/htdocs/4305/application/config/database.php",
 		"/D/xampp/htdocs/4305/application/config/config.php",
@@ -380,7 +361,6 @@
 		"/D/xampp/htdocs/4305/admin/view/taikhoan/them.php",
 		"/D/xampp/htdocs/4305/admin/view/taikhoan/dangnhap.php",
 		"/D/xampp/htdocs/4305/admin/view/partials/header.php",
-		"/D/xampp/htdocs/4305/README.md",
 		"/D/xampp/htdocs/4305/system/library/DB_Library.php",
 		"/D/xampp/htdocs/4305/.htaccess",
 		"/C/Program Files/NetBeans 8.2/etc/netbeans.conf",
@@ -477,11 +457,7 @@
 		"/C/Users/quocd/Downloads/Technology_Explorer_v4.2_for_IBM_DB2/config.php",
 		"/D/xampp/htdocs/tcu-online/application/modules/information/controllers/Student.php",
 		"/D/xampp/htdocs/tcu-online/application/modules/dashboard/controllers/Dashboard.php",
-		"/D/xampp/htdocs/tcu-online/application/modules/account/controllers/Authentication.php",
-		"/D/xampp/htdocs/tcu-online/application/modules/organization/controllers/Clss.php",
-		"/D/xampp/htdocs/tcu-online/application/modules/conduct/controllers/Criterias.php",
-		"/D/ROBOCON 2017/code scan Line 2 sensor-tai D14.txt",
-		"/D/xampp/htdocs/tcu-online/system/core/Router.php"
+		"/D/xampp/htdocs/tcu-online/application/modules/account/controllers/Authentication.php"
 	],
 	"find":
 	{
@@ -499,6 +475,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"errThemNV",
+			"frmThemNV",
 			"errDangNhap",
 			"clickDangNhap",
 			"|---",
@@ -527,55 +505,39 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/controllers/Home.php",
+					"file": "/D/xampp/htdocs/4305cu/.htaccess",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 349,
+						"buffer_size": 492,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								236,
-								236
+								73,
+								73
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
 								"close":
 								{
-									"1":
-									[
-										236,
-										237
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/single_quote.png",
-										"brackethighlighter.default"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										226,
-										227
-									]
 								},
 								"unmatched":
 								{
@@ -639,249 +601,10 @@
 								"bh_angle_close",
 								"bh_angle_content"
 							],
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "application/views/mainLayout.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1008,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								224,
-								224
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										226,
-										231
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/tag.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										111,
-										116
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "application/views/partials/sidebar.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1824,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1214,
-								1214
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										1216,
-										1220
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/tag.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										1200,
-										1204
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 216.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

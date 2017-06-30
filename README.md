@@ -18,33 +18,25 @@
 	<!--  -->
 	<h1>Tổ chức mã nguồn</h1>
 	<p>
-		Được xây dựng theo mô hình MVC là một mô hình chuẩn được sử dụng rộng rãi hiện nay, mã nguồn của website được tổ chức rõ ràng theo từng thư mục với từng nhiệm vụ và chức năng khác nhau. <a target="_blank" href="https://freetuts.net/mvc-php-mo-hinh-mvc-la-gi-354.html">Tìm hiểu mô hình MVC trong PHP?</a>
-<pre>
-|- <strong>admin</strong> <em>(Chứa các chức năng quản lý của các bộ Đoàn)</em>
-|--- <strong>config</strong> <em>(Chứa các thông tin cấu hình)</em>
-|--- <strong>controller</strong> <em>(Chứa các Controller)</em>
-|--- <strong>model</strong> <em>(Chứa các Model)</em>
-|--- <strong>view</strong> <em>(Chứa các View)</em>
-|- <strong>application</strong> <em>(Chứa các chức năng cho Đoàn viên)</em>
-|--- <strong>config</strong> <em>(Chứa các thông tin cấu hình)</em>
-|--- <strong>controller</strong> <em>(Chứa các Controller)</em>
-|--- <strong>model</strong> <em>(Chứa các Model)</em>
-|--- <strong>view</strong> <em>(Chứa các View)</em>
-|- <strong>public</strong> <em>(Chứa các file public)</em>
-|--- <strong>css</strong> <em>(Chứa các CSS)</em>
-|--- <strong>fonts</strong> <em>(Chứa các Fonts)</em>
-|--- <strong>images</strong> <em>(Chứa các Hình ảnh)</em>
-|--- <strong>js</strong> <em>(Chứa các JavaScript)</em>
-|--- <strong>plugins</strong> <em>(Chứa các Plugin)</em>
-|- <strong>system</strong> <em>(Chứa các file hệ thống)</em>
-|--- <strong>config</strong> <em>(Chứa các thông tin cấu hình)</em>
-|--- <strong>core</strong> <em>(Core chính hệ thống)</em>
-|--- <strong>helper</strong> <em>(Chứa các Helper)</em>
-|--- <strong>library</strong> <em>(Chứa các Thư viện)</em>
-|- <strong>upload</strong> <em>(Chứa các file được upload)</em>
-|- <strong>index.php</strong>
-</pre>
+		Được xây dựng trên nền Framework <a href="https://www.codeigniter.com/" target="_blank">CodeIgniter</a> là một nền tảng ứng dụng web nguồn mở được viết bằng ngôn ngữ PHP. Framework này được thiết kế theo mô hình MVC, nó giúp cho việc thiết kế, xử lý và bảo trì mã nguồn dễ dàng, đồng thời tăng khả năng mở rộng của phần mềm<a target="_blank" href="https://freetuts.net/mvc-php-mo-hinh-mvc-la-gi-354.html">Tìm hiểu mô hình MVC trong PHP?</a> Ngoài ra, vận dụng mô hình này trong thiết kế, giúp tách biệt các tập tin giao diện với các tập tin xử lý dữ liệu, nâng cao khả năng quản lý và dễ bảo trì.
 	</p>
+	<p>
+		<img src="https://viblo.asia/uploads/063333ef-c2b3-4d9b-993d-cf72dce368f0.jpg" alt="">
+	</p>
+	<p>Tập tin index.php được xem như controller đầu vào, tiếp nhận các yêu cầu từ phía client và chuyển các yêu cầu này cho hệ thống xử lý.</p>
+	<ul>
+		<li>Thư mục <code>application</code>: Dành cho lập trình viên, các tập tin được lập trình cho ứng dụng sẽ lưu trong thư mục này.</li>
+		<li>Thư mục <code>application/config</code>: Chứa các tập tin cấu hình hệ thống</li>
+		<li>Thư mục <code>application/controllers</code>: chứa các lớp controller</li>
+		<li>Thư mục <code>application/errors</code>: chứa các tập tin lỗi</li>
+		<li>Thư mục <code>application/helpers</code>: chứa các hàm tiện ích do người dùng định nghĩa</li>
+		<li>Thư mục <code>application/hooks</code>: chứa các tập tin để mở rộng mã nguồn CodeIgniter</li>
+		<li>Thư mục <code>application/language</code>: chứa các tập tin ngôn ngữ</li>
+		<li>Thư mục <code>application/libraries</code>: chứa c|c thư viện cho người dùng dùng định nghĩa</li>
+		<li>Thư mục <code>application/models</code>: chứa các lớp model</li>
+		<li>Thư mục <code>application/views</code>: chứa các lớp view<br>
+		Ta cũng có thể đổi tên của thư mục application tùy ý. Sau khi đổi tên, cần thiết lập tên mới cho biến <strong>$application_folder</strong> trong tập tin index.php</li>
+	</ul>
 	<!--  -->
 	<h1>Ngôn ngữ lập trình</h1>
 	<p>
@@ -64,12 +56,12 @@
 	<!--  -->
 	<h1>Tài liệu dành cho nhà phát triển</h1>
 	<p>
-		Đặt liên kết đến tài liệu dành cho nhà phát triển tại đây.
+		Tài liệu phát triển của CodeIgniter. <a href="https://www.codeigniter.com/user_guide/" target="_blank">Xem tại đây</a>.
 	</p>
 	<!--  -->
 	<h1>Tài liệu thiết kế</h1>
 	<p>
-		Đặt liên kết đến tài liệu thiết kế tại đây.
+		Tài liệu thiết kế của AdminLTE. <a href="https://adminlte.io/themes/AdminLTE/documentation/index.html" target="_blank">Xem tại đây</a>.
 	</p>
 	<!--  -->
 	<h1>Danh sách lỗi</h1>
