@@ -43,12 +43,12 @@ class Chidoan extends CI_Controller {
 		if (!isset($params['MACD']) || empty($params['MACD'])) {
 			$result = array(
 				'status' => false,
-				'message' => 'Chưa nhập Mã Đoàn cơ sở'
+				'message' => 'Chưa nhập Mã Chi đoàn'
 			);
 		} elseif (!isset($params['TENCD']) || empty($params['TENCD'])) {
 			$result = array(
 				'status' => false,
-				'message' => 'Chưa nhập Tên Đoàn cơ sở'
+				'message' => 'Chưa nhập Tên Chi đoàn'
 			);
 		} elseif (!isset($params['MADCS']) || empty($params['MADCS'])) {
 			$result = array(

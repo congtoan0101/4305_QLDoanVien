@@ -8,8 +8,8 @@ App.Site = function(){
 
 	var init = function(){
 		$('select').select2();
-		$('#datepicker,#datepicker2,#chonNgayXemHD').datepicker({
-			autoclose: true,
+		$('#datepicker,#datepicker2').datepicker({
+			autoclose: false,
 			format: 'dd/mm/yyyy'
 		});
 
@@ -154,7 +154,7 @@ App.DoanCS = function(){
 	        var frmData = $('#frmThemDCS').serialize();
 
 	        $.ajax({
-	            url : baseurl + '/doancs/xulyThemDCS',
+	            url : baseurl + 'doancs/xulyThemDCS',
 	            type : 'POST',
 	            data : frmData,
 	            dataType: 'json',
@@ -177,7 +177,8 @@ App.DoanCS = function(){
 	            }
 	        });
 	    }
-	}
+	};
+
 	return {
 		ThemDCS:ThemDCS
 	};
@@ -195,7 +196,7 @@ App.ChiDoan = function(){
 	        var frmData = $('#frmThemCD').serialize();
 
 	        $.ajax({
-	            url : baseurl + '/chidoan/xulyThemCD',
+	            url : baseurl + 'chidoan/xulyThemCD',
 	            type : 'POST',
 	            data : frmData,
 	            dataType: 'json',
@@ -218,8 +219,51 @@ App.ChiDoan = function(){
 	            }
 	        });
 	    }
-	}
+	};
+
 	return {
 		ThemCD:ThemCD
+	};
+}();
+
+// Đoàn viên
+App.DoanVien = function(){
+
+	var dangXuLy = false;
+
+	var ThemDV = function() {
+	    if (dangXuLy == false) {
+	        App.Site.showAjaxLoading();
+	        dangXuLy = true;
+	        var frmData = $('#frmThemDV').serialize();
+
+	        $.ajax({
+	            url : baseurl + 'doanvien/xulyThemDV',
+	            type : 'POST',
+	            data : frmData,
+	            dataType: 'json',
+	            success : function(res){
+	                App.Site.hideAjaxLoading();
+	                dangXuLy = false;
+	                if (res.status == false) {
+	                    $('#errThemDV').removeClass('text-success').addClass('text-danger').html(res.message).slideDown(200);
+	                    
+	                    setTimeout(function(){
+	                        $('#errThemDV').slideUp(200);
+	                    }, 3000);
+	                } else {
+	                    $('#errThemDV').removeClass('text-danger').addClass('text-success').html(res.message).slideDown(200);
+	                    
+	                    setTimeout(function(){
+	                        location.reload();
+	                    }, 700);
+	                }
+	            }
+	        });
+	    }
+	};
+
+	return {
+		ThemDV:ThemDV
 	};
 }();
