@@ -28,8 +28,8 @@
 									<td class="text-center"><?php echo $item['MADCS']; ?></td>
 									<td class="text-center"><?php echo $item['TENDCS']; ?></td>
 									<td class="text-center">
-										<button disabled class="btn btn-warning btn-sm btn-flat"><i class="fa fa-pencil"></i> Sửa</button>
-										<button disabled class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i> Xóa</button>
+										<a href="<?php echo base_url('doancs/sua/'.$item['MADCS']); ?>" class="btn btn-warning btn-sm btn-flat"><i class="fa fa-pencil"></i> Sửa</a>
+										<a href="<?php echo base_url('doancs/xoa/'.$item['MADCS']); ?>" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i> Xóa</a>
 									</td>
 								</tr>
 							<?php } ?>
