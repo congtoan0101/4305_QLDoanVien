@@ -2,30 +2,31 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Model_Doanvien extends CI_Model {
-	
-	private $myTable = 'doanvien';
 
 	function __construct() {
 		parent::__construct();
 	}
 
 	public function existed($maDV) {
-		if ($this->db->where('MADV', $maDV)->from($this->myTable)->count_all_results() > 0) return true;
+		$sql = "SELECT * FROM QLDV.DOANVIEN WHERE MADV='".$maDV."'";
+		
+		if ($this->db->query($sql)->num_rows() > 0) return true;
 		return false;
 	}
 
 	public function numTotal() {
-		return $this->db->get($this->myTable)->num_rows();
+		$sql = "SELECT * FROM QLDV.DOANVIEN";
+		return $this->db->query($sql)->num_rows();
 	}
 
 	public function numByDCS($maDCS) {
-		$sql = "SELECT * FROM doanvien as dv INNER JOIN chidoan as cd ON dv.MACD = cd.MACD WHERE cd.MADCS='".$maDCS."'";
+		$sql = "SELECT * FROM QLDV.DOANVIEN as dv INNER JOIN QLDV.CHIDOAN as cd ON dv.MACD = cd.MACD WHERE cd.MADCS='".$maDCS."'";
 		return $this->db->query($sql)->num_rows();
 	}
 
 	public function numBySearch($key = "") {
 		if (!empty($key)) {
-			$sql = "SELECT * FROM doanvien WHERE CONCAT(HODV,' ',TENDV) LIKE '%".$key."%' OR MADV LIKE '%".$key."%'";
+			$sql = "SELECT * FROM QLDV.DOANVIEN WHERE CONCAT(HODV,CONCAT(' ',TENDV)) LIKE '%".$key."%' OR MADV LIKE '%".$key."%'";
 			
 			return $this->db->query($sql)->num_rows();
 		} else {
@@ -35,17 +36,23 @@ class Model_Doanvien extends CI_Model {
 
 	public function get($maDV = "", $perpage = 20, $offset = 0) {
 		if (!empty($maDV)) {
-			$dcs = $this->db->where('MADV', $maDV)->get($this->myTable)->limit($offset,$perpage)->result_array();
-			if (count($dcs) > 0) return $dcs[0];
+			
+			$sql = "SELECT * FROM QLDV.DOANVIEN WHERE MADV='".$maDV."' LIMIT ".$offset.",".$perpage;
+			
+			$cd = $this->db->query($sql)->result_array();
+			if (count($cd) > 0) return $cd[0];
 			return null;
 		} else {
-			return $this->db->get($this->myTable)->result_array();
+			
+			$sql = "SELECT * FROM QLDV.DOANVIEN ORDER BY MADV ASC LIMIT ".$offset.",".$perpage;
+			
+			return $this->db->query($sql)->result_array();
 		}
 	}
 
 	public function getBySearch($key = "", $perpage = 20, $offset = 0) {
 		if (!empty($key)) {
-			$sql = "SELECT * FROM doanvien WHERE CONCAT(HODV,' ',TENDV) LIKE '%".$key."%' OR MADV LIKE '%".$key."%' LIMIT ".$offset.",".$perpage;
+			$sql = "SELECT * FROM QLDV.DOANVIEN WHERE CONCAT(HODV,CONCAT(' ',TENDV)) LIKE '%".$key."%' OR MADV LIKE '%".$key."%' LIMIT ".$offset.",".$perpage;
 			
 			return $this->db->query($sql)->result_array();
 		} else {
@@ -55,21 +62,27 @@ class Model_Doanvien extends CI_Model {
 
 	public function insert($data = []) {
 		if ($data) {
-			return $this->db->insert($this->myTable, $data);
+			$sql = "INSERT INTO QLDV.DOANVIEN VALUES ('".$data['MADV']."', '".$data['HODV']."', '".$data['TENDV']."', '".$data['MACD']."', '".$data['NGAYSINH']."', ".$data['GIOITINH'].", '".$data['NGAYVAODOAN']."', '".$data['QUEQUAN']."', '".$data['CHUCVU']."')";
+			
+			return $this->db->query($sql);
 		}
 		return false;
 	}
 
 	public function update($data = []) {
 		if ($data) {
-			return $this->db->where('MADV', $data['MADV'])->update($this->myTable, $data);
+			$sql = "UPDATE QLDV.DOANVIEN SET HODV='".$data['HODV']."', TENDV='".$data['TENDV']."', MACD='".$data['MACD']."', NGAYSINH='".$data['NGAYSINH']."', GIOITINH=".$data['GIOITINH'].", NGAYVAODOAN='".$data['NGAYVAODOAN']."', QUEQUAN='".$data['QUEQUAN']."', CHUCVU='".$data['CHUCVU']."' WHERE MADV='".$data['MADV']."'";
+			
+			return $this->db->query($sql);
 		}
 		return false;
 	}
 
 	public function delete($maDV) {
 		if ($maDV) {
-			return $this->db->where('MADV', $maDV)->delete($this->myTable);
+			$sql = "DELETE FROM QLDV.DOANVIEN WHERE MADV='".$maDV."'";
+			
+			return $this->db->query($sql);
 		}
 		return false;
 	}
