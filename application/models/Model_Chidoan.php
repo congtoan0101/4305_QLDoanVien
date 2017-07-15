@@ -14,6 +14,16 @@ class Model_Chidoan extends CI_Model {
 		return false;
 	}
 
+	public function numByDCS($maDCS) {
+		$sql = "SELECT * FROM QLDV.CHIDOAN WHERE MADCS='".$maDCS."'";
+		return $this->db->where('MADCS', $maDCS)->get($this->myTable)->num_rows();
+	}
+
+	public function getByDCS($maDCS) {
+		$sql = "SELECT * FROM QLDV.CHIDOAN WHERE MADCS='".$maDCS."'";
+		return $this->db->where('MADCS', $maDCS)->get($this->myTable)->result_array();
+	}
+	
 	public function get($maCD = "") {
 		if (!empty($maCD)) {
 			$dcs = $this->db->where('MACD', $maCD)->get($this->myTable)->result_array();
