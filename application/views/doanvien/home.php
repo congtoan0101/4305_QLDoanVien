@@ -10,45 +10,72 @@
 					<div class="col-xs-12">
 						<button type="button" class="btn btn-success btn-flat" data-toggle="modal" data-target="#modalThemDV"><i class="fa fa-plus"></i> Thêm mới</button>
 					</div>
-					
+				</div>
+				<div class="row" style="margin-top: 15px;">
+					<form method="get" accept-charset="utf-8">
+						<div class="col-md-8 col-xs-12">
+							<div class="form-group">
+								<label>Tìm kiếm theo: Họ tên hoặc mã đoàn viên</label>
+								<div class="row">
+									<div class="col-xs-10">
+										<input type="text" class="form-control" name="search" placeholder="Nhập từ khóa tìm kiếm..." value="<?php echo $search; ?>">
+									</div>
+									<div class="col-xs-2">
+										<button type="submit" class="btn btn-success btn-flat">Tìm kiếm</button>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</form>
 				</div>
 				<div class="row" style="margin-top: 15px;">
 					<div class="col-xs-12">
-						<table class="table table-bordered">
-							<tr class="text-success">
-								<th class="text-center">STT</th>
-								<th class="text-center">Chi đoàn</th>
-								<th class="text-center">Mã Đoàn viên</th>
-								<th class="text-center">Họ và đệm Đoàn viên</th>
-								<th class="text-center">Tên Đoàn viên</th>
-								<th class="text-center">Ngày sinh</th>
-								<th class="text-center">Giới tính</th>
-								<th class="text-center">Ngày vào Đoàn</th>
-								<th class="text-center">Quê quán</th>
-								<th class="text-center">Chức vụ</th>
-								<th class="text-center">Chức năng</th>
-							</tr>
-						<?php if (isset($listDV) && !empty($listDV)): ?>
-						<?php foreach ($listDV as $i => $item) { ?>
-							<tr>
-								<td class="text-center"><?php echo $i + 1; ?></td>
-								<td class="text-center"><?php echo $item['TENCD']; ?></td>
-								<td class="text-center"><?php echo $item['MADV']; ?></td>
-								<td class="text-center"><?php echo $item['HODV']; ?></td>
-								<td class="text-center"><?php echo $item['TENDV']; ?></td>
-								<td class="text-center"><?php echo $item['NGAYSINH']; ?></td>
-								<td class="text-center"><?php echo $item['GIOITINH']; ?></td>
-								<td class="text-center"><?php echo $item['NGAYVAODOAN']; ?></td>
-								<td class="text-center"><?php echo $item['QUEQUAN']; ?></td>
-								<td class="text-center"><?php echo $item['CHUCVU']; ?></td>
-								<td class="text-center">
-									<button disabled class="btn btn-warning btn-sm btn-flat"><i class="fa fa-pencil"></i> Sửa</button>
-									<button disabled class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i> Xóa</button>
-								</td>
-							</tr>
-						<?php } ?>
+						<ul class="pagination pagination-flat inline">
+							<?php echo $pagination; ?>
+						</ul>
+					</div>
+				</div>
+				<div class="row" style="margin-top: 15px;">
+					<div class="col-xs-12">
+						<?php if (!empty($search)): ?>
+							<p>Tìm thấy <strong><?php echo count($listDV); ?></strong> kết quả!</p>
 						<?php endif ?>
-						</table>
+						
+						<div class="table-responsive">
+							<table class="table table-bordered table-hover">
+								<tr class="bg-green">
+									<th class="text-center">STT</th>
+									<th class="text-center">Chi đoàn</th>
+									<th class="text-center">Mã Đoàn viên</th>
+									<th class="text-center">Họ và tên Đoàn viên</th>
+									<th class="text-center">Ngày sinh</th>
+									<th class="text-center">Giới tính</th>
+									<th class="text-center">Ngày vào Đoàn</th>
+									<th class="text-center">Quê quán</th>
+									<th class="text-center">Chức vụ</th>
+									<th class="text-center">Chức năng</th>
+								</tr>
+							<?php if (isset($listDV) && !empty($listDV)): ?>
+							<?php foreach ($listDV as $i => $item) { ?>
+								<tr>
+									<td class="text-center"><?php echo $i + 1; ?></td>
+									<td class="text-center"><?php echo $item['TENCD']; ?></td>
+									<td class="text-center"><?php echo $item['MADV']; ?></td>
+									<td class="text-center"><?php echo $item['HODV']; ?> <?php echo $item['TENDV']; ?></td>
+									<td class="text-center"><?php echo $item['NGAYSINH']; ?></td>
+									<td class="text-center"><?php echo $item['GIOITINH']; ?></td>
+									<td class="text-center"><?php echo $item['NGAYVAODOAN']; ?></td>
+									<td class="text-center"><?php echo $item['QUEQUAN']; ?></td>
+									<td class="text-center"><?php echo $item['CHUCVU']; ?></td>
+									<td class="text-center">
+										<a href="<?php echo base_url('doanvien/sua/'.$item['MADV']); ?>" class="btn btn-warning btn-sm btn-flat"><i class="fa fa-pencil"></i> Sửa</a>
+										<a href="<?php echo base_url('doanvien/xoa/'.$item['MADV']); ?>" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i> Xóa</a>
+									</td>
+								</tr>
+							<?php } ?>
+							<?php endif ?>
+							</table>
+						</div>
 					</div>
 				</div>
 			</div>
