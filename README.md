@@ -20,9 +20,6 @@
 	<p>
 		Được xây dựng trên nền Framework <a href="https://www.codeigniter.com/" target="_blank">CodeIgniter</a> là một nền tảng ứng dụng web nguồn mở được viết bằng ngôn ngữ PHP. Framework này được thiết kế theo mô hình MVC, nó giúp cho việc thiết kế, xử lý và bảo trì mã nguồn dễ dàng, đồng thời tăng khả năng mở rộng của phần mềm<a target="_blank" href="https://freetuts.net/mvc-php-mo-hinh-mvc-la-gi-354.html">. Tìm hiểu mô hình MVC trong PHP?</a> Ngoài ra, vận dụng mô hình này trong thiết kế, giúp tách biệt các tập tin giao diện với các tập tin xử lý dữ liệu, nâng cao khả năng quản lý và dễ bảo trì.
 	</p>
-	<p>
-		<img src="https://viblo.asia/uploads/063333ef-c2b3-4d9b-993d-cf72dce368f0.jpg" alt="">
-	</p>
 	<p>Tập tin index.php được xem như controller đầu vào, tiếp nhận các yêu cầu từ phía client và chuyển các yêu cầu này cho hệ thống xử lý.</p>
 	<ul>
 		<li>Thư mục <code>application</code>: Dành cho lập trình viên, các tập tin được lập trình cho ứng dụng sẽ lưu trong thư mục này.</li>
