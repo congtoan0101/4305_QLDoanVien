@@ -15,29 +15,31 @@
 
 				<div class="row" style="margin-top: 15px;">
 					<div class="col-xs-12">
-						<table class="table table-bordered">
-							<tr class="text-success">
-								<th class="text-center">STT</th>
-								<th class="text-center">Mã Chi đoàn</th>
-								<th class="text-center">Tên Chi đoàn</th>
-								<th class="text-center">Đoàn cơ sở</th>
-								<th class="text-center">Chức năng</th>
-							</tr>
-						<?php if (isset($listCD) && !empty($listCD)): ?>
-						<?php foreach ($listCD as $i => $item) { ?>
-							<tr>
-								<td class="text-center"><?php echo $i + 1; ?></td>
-								<td class="text-center"><?php echo $item['MACD']; ?></td>
-								<td class="text-center"><?php echo $item['TENCD']; ?></td>
-								<td class="text-center"><?php echo $item['TENDCS']; ?></td>
-								<td class="text-center">
-									<button disabled class="btn btn-warning btn-sm btn-flat"><i class="fa fa-pencil"></i> Sửa</button>
-									<button disabled class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i> Xóa</button>
-								</td>
-							</tr>
-						<?php } ?>
-						<?php endif ?>
-						</table>
+						<div class="table-responsive">
+							<table class="table table-bordered table-hover">
+								<tr class="bg-green">
+									<th class="text-center">STT</th>
+									<th class="text-center">Mã Chi đoàn</th>
+									<th class="text-center">Tên Chi đoàn</th>
+									<th class="text-center">Đoàn cơ sở</th>
+									<th class="text-center">Chức năng</th>
+								</tr>
+							<?php if (isset($listCD) && !empty($listCD)): ?>
+							<?php foreach ($listCD as $i => $item) { ?>
+								<tr>
+									<td class="text-center"><?php echo $i + 1; ?></td>
+									<td class="text-center"><?php echo $item['MACD']; ?></td>
+									<td class="text-center"><?php echo $item['TENCD']; ?></td>
+									<td class="text-center"><?php echo $item['TENDCS']; ?></td>
+									<td class="text-center">
+										<a href="<?php echo base_url('chidoan/sua/'.$item['MACD']); ?>" class="btn btn-warning btn-sm btn-flat"><i class="fa fa-pencil"></i> Sửa</a>
+										<a href="<?php echo base_url('chidoan/xoa/'.$item['MACD']); ?>" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i> Xóa</a>
+									</td>
+								</tr>
+							<?php } ?>
+							<?php endif ?>
+							</table>
+						</div>
 					</div>
 				</div>
 			</div>
